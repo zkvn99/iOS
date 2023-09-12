@@ -16,6 +16,7 @@
 		4CB48D662A0206D100B22F7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CB48D652A0206D100B22F7A /* Assets.xcassets */; };
 		4CB48D692A0206D100B22F7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CB48D672A0206D100B22F7A /* LaunchScreen.storyboard */; };
 		4CB48D712A020A5600B22F7A /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB48D702A020A5600B22F7A /* MyTableViewCell.swift */; };
+		4CEBFAFE2A32F81500D50E6C /* PreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEBFAFD2A32F81500D50E6C /* PreViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		4CB48D682A0206D100B22F7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CB48D6A2A0206D100B22F7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CB48D702A020A5600B22F7A /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		4CEBFAFD2A32F81500D50E6C /* PreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				4CB48D5E2A0206D100B22F7A /* SceneDelegate.swift */,
 				4CB48D602A0206D100B22F7A /* ViewController.swift */,
 				4CB48D622A0206D100B22F7A /* Main.storyboard */,
+				4CEBFAFD2A32F81500D50E6C /* PreViewController.swift */,
 				4CB48D652A0206D100B22F7A /* Assets.xcassets */,
 				4CB48D672A0206D100B22F7A /* LaunchScreen.storyboard */,
 				4CB48D6A2A0206D100B22F7A /* Info.plist */,
@@ -150,6 +153,7 @@
 				4CB48D612A0206D100B22F7A /* ViewController.swift in Sources */,
 				4C30BEBB2A26F19100E850F2 /* MapViewController.swift in Sources */,
 				4CB48D712A020A5600B22F7A /* MyTableViewCell.swift in Sources */,
+				4CEBFAFE2A32F81500D50E6C /* PreViewController.swift in Sources */,
 				4C30BEB92A26E71100E850F2 /* DetailViewController.swift in Sources */,
 				4CB48D5D2A0206D100B22F7A /* AppDelegate.swift in Sources */,
 				4CB48D5F2A0206D100B22F7A /* SceneDelegate.swift in Sources */,

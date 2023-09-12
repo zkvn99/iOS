@@ -7,8 +7,6 @@
 
 import UIKit
 
-let name = ["슈퍼 마리오 브라더스","드림","존 윅4","스즈메의 문단속","옥수역귀신","리바운드","더 퍼스트 슬램덩크","렌필드","킬링 로맨스","무명"]
-
 // MARK: - Welcome
 struct MovieData: Codable {
     let boxOfficeResult: BoxOfficeResult
@@ -38,7 +36,9 @@ struct DailyBoxOfficeList: Codable {
 
 enum RankOldAndNew: String, Codable {
     case old = "OLD"
+    case new = "NEW"
 }
+
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     

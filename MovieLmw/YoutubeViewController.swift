@@ -1,30 +1,29 @@
 //
-//  DetailViewController.swift
+//  YoutubeViewController.swift
 //  MovieLmw
 //
-//  Created by 이민욱 on 2023/05/31.
+//  Created by 이민욱 on 2023/06/09.
 //
 
 import UIKit
 import WebKit
 
-class DetailViewController: UIViewController {
 
+class YoutubeViewController: UIViewController {
 
-
-    @IBOutlet weak var webView: WKWebView!
-    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var youtube: WKWebView!
     var movieName = ""
     override func viewDidLoad() {
         super.viewDidLoad()
-        //nameLabel.text = movieName
+        
         navigationItem.title = movieName
-        let urlKorString =  "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query="+movieName
+        let urlKorString = "https://www.youtube.com/results?search_query="+movieName+"미리보기"
         let urlString = urlKorString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
         guard let url = URL(string: urlString) else { return }
         let request = URLRequest(url: url)
-        webView.load(request)
-        
+        youtube.load(request)
+
+        // Do any additional setup after loading the view.
     }
     
 

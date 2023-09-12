@@ -18,7 +18,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="1S7-QW-61J">
                                 <rect key="frame" x="0.0" y="103" width="393" height="666"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" rowHeight="119" id="Usk-0S-KIL" customClass="MyTableViewCell" customModule="MovieLmw" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="119"/>
@@ -27,9 +27,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="119"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dRz-H8-gqe">
-                                                    <rect key="frame" x="6" y="17" width="194" height="87"/>
-                                                    <color key="backgroundColor" red="0.34559424379999998" green="0.92945480459999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dRz-H8-gqe">
+                                                    <rect key="frame" x="0.0" y="17" width="201" height="87"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -42,7 +41,7 @@
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wly-zt-WrZ">
                                                     <rect key="frame" x="209" y="16" width="165" height="47"/>
-                                                    <color key="backgroundColor" red="0.76798868279999999" green="0.92265689370000004" blue="0.37942738380000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="165" id="Lbi-Ne-V36"/>
                                                     </constraints>
@@ -52,7 +51,7 @@
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ir-jf-zIN">
                                                     <rect key="frame" x="208" y="64" width="165" height="38"/>
-                                                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="38" id="ZCF-kf-dq2"/>
                                                     </constraints>
@@ -164,17 +163,54 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="A4f-QC-FXw"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vwq-ob-Q8E">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="3ye-dJ-bDj"/>
                         <segue destination="1s0-dg-mKz" kind="relationship" relationship="viewControllers" id="CSY-Gd-ROp"/>
+                        <segue destination="g6k-rS-PHY" kind="relationship" relationship="viewControllers" id="47E-ba-Sov"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NLb-p7-1kV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1929.0076335877861" y="3.5211267605633805"/>
+        </scene>
+        <!--Preview-->
+        <scene sceneID="leo-Jz-1In">
+            <objects>
+                <viewController id="g6k-rS-PHY" customClass="PreViewController" customModule="MovieLmw" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="80q-XJ-v60">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NKK-U7-ILa">
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Zga-0N-BPu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NKK-U7-ILa" firstAttribute="bottom" secondItem="Zga-0N-BPu" secondAttribute="bottom" id="gJL-GO-aMu"/>
+                            <constraint firstItem="NKK-U7-ILa" firstAttribute="leading" secondItem="Zga-0N-BPu" secondAttribute="leading" id="p8s-WV-aEL"/>
+                            <constraint firstItem="NKK-U7-ILa" firstAttribute="top" secondItem="Zga-0N-BPu" secondAttribute="top" id="qSw-Ao-mTo"/>
+                            <constraint firstItem="NKK-U7-ILa" firstAttribute="trailing" secondItem="Zga-0N-BPu" secondAttribute="trailing" id="uIo-0b-OmC"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Preview" image="video" catalog="system" id="WZc-Fo-aEK"/>
+                    <connections>
+                        <outlet property="webView" destination="NKK-U7-ILa" id="BSH-NL-Ygw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m9L-a5-9ye" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1521.3740458015266" y="728.87323943661977"/>
         </scene>
         <!--theater-->
         <scene sceneID="rlW-mf-G48">
@@ -215,14 +251,15 @@
     <resources>
         <image name="map.fill" catalog="system" width="128" height="110"/>
         <image name="ticket.fill" catalog="system" width="128" height="86"/>
+        <image name="video" catalog="system" width="128" height="82"/>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
